@@ -47,6 +47,7 @@ const App = () => {
           path="/course/:id"
           element={token ? <CourseDetails /> : <Navigate to="/login" />}
         />
+         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </div>
     </div>
